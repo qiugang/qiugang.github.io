@@ -1,0 +1,16 @@
+<aside class="logo">
+
+	{% if page.url == '/index.html' or page.url == '/' %}
+		{% assign link = '/about' %}
+		{% assign prompt = '关于我' %}
+	{% else %}
+		{% assign link = '/' %}
+		{% assign prompt = '返回' %}
+	{% endif %}
+
+	<a href="{{ link | prepend: site.baseurl }}">
+		<img class="gravatar" width="80px" height="80px" src="/assets/gravatar.png">
+	</a>
+	<span class="logo-prompt">{{ prompt }}</span>
+
+</aside>

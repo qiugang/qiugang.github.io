@@ -1,0 +1,50 @@
+# 网站信息
+title:              "远方的田野"
+description:        "google脑残粉&&android dog&&顺带写点代码&&山东蓝翔技术大学西南分院"
+
+# 作者信息
+author_name:        "OriginQiu"
+author_email:       thisisqg@gmail.com
+twitter_username:   "OriginQiu"
+
+# 网站设置
+baseurl:            ""
+permalink:          /:title
+timezone:           Asia/Shanghai
+encoding:           UTF-8
+
+# 网站生成
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# 其他配置
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"

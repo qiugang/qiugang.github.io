@@ -1,4 +1,4 @@
-<aside class="logo">
+<!-- <aside class="logo">
 
 	{% if page.url == '/index.html' or page.url == '/' %}
 		{% assign link = '/about' %}
@@ -8,9 +8,28 @@
 		{% assign prompt = '返回' %}
 	{% endif %}
 
-	<a href="{{ link | prepend: site.baseurl }}">
+	<!-- <a href="{{ link | prepend: site.baseurl }}">
 		<img class="gravatar" width="80px" height="80px" src="/assets/gravatar.png">
 	</a>
-	<span class="logo-prompt">{{ prompt }}</span>
+	<span class="logo-prompt">{{ prompt }}</span> -->
 
-</aside>
+<!-- </aside> -->
+
+<article>
+
+	{% if page.url == '/index.html' or page.url == '/' %}
+		{% assign link = '/about' %}
+		{% assign prompt = 'nothing' %}
+	{% else %}
+		{% assign link = '/' %}
+		{% assign prompt = '' %}
+	{% endif %}
+
+	<div class="left">
+		<a href="{{ link | prepend: site.baseurl }}">
+			<h1>{{ prompt }}</h1>
+		</a>
+		<br/>
+	</div>
+
+</article>

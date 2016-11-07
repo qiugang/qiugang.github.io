@@ -173,8 +173,7 @@ span[data-note] {
     font-size: 0.8235em;
     text-align: center;
     line-height: 1.2;
-    top: 50%;
-    margin-top: -10px;
+    margin-top: 40px;
     &:before {
       content: "";
       border-width: 5px 5px 5px 0;
@@ -298,6 +297,11 @@ article {
     line-height: 1.9em;
     word-wrap: break-word;
   }
+  li {
+    font-size: 15px;
+    line-height: 1.9em;
+    word-wrap: break-word;
+  }
   .footnote {
     border: 0;
   }
@@ -323,6 +327,16 @@ article {
       margin-right: 5px;
       color: #000000;
     }
+  }
+}
+.copyright {
+  text-align: center;
+  p {
+    text-decoration: none;
+    margin: 40px auto 0;
+    padding: 10px;
+    border: 0;
+    font-size: 80%;
   }
 }
 

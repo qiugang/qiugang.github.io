@@ -1,5 +1,5 @@
 ---
-title: use infer to improve code
+title: Use infer to improve code
 ---
 
 coding 毕竟是一项人为的操作，平时即使是谨慎的去写代码，难免还是会有一些比较低级的错误。而且最为尴尬的是，就是因为比较低级简单，往往 code review 时还不容易发现。NullPointer, RESOURCE_LEAK 等时不时的还是会出现。

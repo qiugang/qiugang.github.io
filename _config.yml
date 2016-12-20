@@ -1,19 +1,20 @@
-# 网站信息
+# site information
 title:              "nothing"
 description:        "google脑残粉&&android dog&&顺带写点代码&&山东蓝翔技术大学西南分院"
 
-# 作者信息
+# author information
 author_name:        "OriginQiu"
 author_email:       thisisqg@gmail.com
 twitter_username:   "OriginQiu"
 
-# 网站设置
+# site setting
 baseurl:            ""
 permalink:          /:title
 timezone:           Asia/Shanghai
 encoding:           UTF-8
 
-# 网站生成
+
+# site generate
 highlighter:        rouge
 markdown:           kramdown
 kramdown:
@@ -21,11 +22,12 @@ kramdown:
 sass:
     style:          :compressed
 
-# 其他配置
+# other setting
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 gems:
   - jekyll-sitemap
+google_analytics: "UA-73165340-1"
 
 compress_html:
     clippings:      all

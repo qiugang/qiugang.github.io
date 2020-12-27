@@ -1,5 +1,3 @@
-## Android AAR 化源码切换工具
-
 #### 背景
 
 对于稍微大一点的 Android 项目，将业务模块打包成aar依赖项是一种常见的操作，上传到公共或自建 maven。但是对于实际的开发过程，开发者经常需要切换 aar 依赖方式到源码，完成新功能开发或调试。
@@ -28,7 +26,6 @@
 		    //...
 		]
 	}
-	
 	```
 
 * 在 setting.gradle 中插入 include 组件本地仓库
@@ -46,7 +43,7 @@
 
 #### 工程改造
 
-* 目标工程根目录新增 ```proj-dep-swich.gradle``` 与 ```proj-dep-swich-config.json(可选)``` 
+* 目标工程根目录新增 ```proj-dep-swich.gradle``` 与 ```proj-dep-swich-config.json``` 
 * 项目 ```setting.gradle``` 新增
 
 	```

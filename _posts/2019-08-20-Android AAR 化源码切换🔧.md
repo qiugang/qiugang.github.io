@@ -13,19 +13,19 @@
 
 	控制切换的参数暂定设计为 ```json``` 格式，并且加入到 ```.gitignore```  中，aar 依赖切换到源码大部分场景仅在各自开发阶段使用，每个人可以按需维护一份自己本地配置，无需繁琐的修改 ```setting.gradle``` 与相关多处 ```build.gradle``` 文件
 	
- 	```
+	```
 	{
-		"debug": false,
-		"configs": [
-		    {
-		      "remoteName": "com.squareup.retrofit2:retrofit:2.4.0"(example),
-		      "localName": "${module-name}",
-		      "localPath": "${local-module-path},
-		      "switch": true
-		    }
-		    //...
-		]
-	}
+			"debug": false,
+			"configs": [
+				{
+				"remoteName": "com.squareup.retrofit2:retrofit:2.4.0"(example),
+				"localName": "${module-name}",
+				"localPath": "${local-module-path},
+				"switch": true
+				}
+				//...
+			]
+		}
 	```
 
 * 在 setting.gradle 中插入 include 组件本地仓库
@@ -43,10 +43,10 @@
 
 #### 工程改造
 
-* 目标工程根目录新增 ```proj-dep-swich.gradle``` 与 ```proj-dep-swich-config.json``` 
+* 目标工程根目录新增 ```dep-swich.gradle``` 与 ```dep-swich-config.json``` 
 * 项目 ```setting.gradle``` 新增
 
 	```
-	apply from: file('proj-dep-swich.gradle')
+	apply from: file('dep-swich.gradle')
 	hookSettings(getSettings())
 	```
